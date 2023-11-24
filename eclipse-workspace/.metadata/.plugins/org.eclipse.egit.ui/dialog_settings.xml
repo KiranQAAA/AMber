@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="1"/>
+	<item key="GitSelectRepositoryPage.lastRepository" value="C:\Users\PAWAN\git\repository\.git"/>
+	<list key="CommitDialog.authorValues">
+		<item value="Kiran&lt;PAWAN@DESKTOP-VN06GLD&gt;"/>
+		<item value="PAWAN &lt;PAWAN@DESKTOP-VN06GLD&gt;"/>
+		<item value="kiraa&lt;PAWAN@DESKTOP-VN06GLD&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="KIran&lt;PAWAN@DESKTOP-VN06GLD&gt;"/>
+		<item value="PAWAN &lt;PAWAN@DESKTOP-VN06GLD&gt;"/>
+		<item value="kiran &lt;PAWAN@DESKTOP-VN06GLD&gt;"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/Vimannagar/ATT_EveningBDDBasics.git"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="GitImportWizard">
+	</section>
+</section>

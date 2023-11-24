@@ -1,0 +1,60 @@
+package basics;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import junit.framework.Assert;
+
+public class apichain {
+	
+	String Message;
+@Test(priority =-1)
+public void createUser() {
+	RestAssured.baseURI="https://petstore.swagger.io/v2";
+	Response responce =given()
+	.body("	{\r\n"
+			+ "  \"id\": 0,\r\n"
+			+ "  \"username\": \"12388Hi1\",\r\n"
+			+ "  \"firstName\": \"ppIII1\",\r\n"
+			+ "  \"lastName\": \"JkoJ1\",\r\n"
+			+ "  \"email\": \"J451@gmail.com\",\r\n"
+			+ "  \"password\": \"string1\",\r\n"
+			+ "  \"phone\": \"96999901256\",\r\n"
+			+ "  \"userStatus\": 0\r\n"
+			+ "}")
+	.header("Content-Type","application/json")
+	.when()
+	.post("/user")
+	.then()
+	.log().all().extract().response();
+	System.out.println(responce);
+	JsonPath js=responce.jsonPath();
+	 Message =js.getString("message");
+	System.out.println(Message);
+	
+	//Assert.assertTrue(Message.equalsIgnoreCase("9223372036854756000"));
+	
+	
+	
+	
+}
+
+@Test(priority =1)
+public void getuserdetials() {
+	RestAssured.baseURI="https://petstore.swagger.io/v2";
+	Response responce2 =given()
+	.pathParam("created_user","12388Hi1")
+	.when()
+	.get("/user/{created_user}")
+	.then()
+	.log().all().extract().response();
+	System.out.println(responce2);
+	JsonPath js=responce2.jsonPath();
+	String id  =js.getString("id");
+	System.out.println(id);
+	Assert.assertEquals(id, Message);
+	
+}
+}

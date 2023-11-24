@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ProjectBDD/src/test/resources/Feature/backgrounddemo&apos; to &apos;backgrounddemo.feature&apos;" description="Rename resource &apos;backgrounddemo&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/resources/Feature/backgrounddemo" name="backgrounddemo.feature" stamp="1689229896920" updateReferences="true"/>
+</session>
